@@ -12,8 +12,7 @@ public class lambda3_forEach {
         l.add("irfan");
         l.add("jai");
 
-        l.forEach(
-                (n)->System.out.println(n)
-        );
+        l.forEach( n->System.out.println(n) ); //Better way is to implement using Method Reference
+        l.forEach(System.out::println); //Same as above
     }
 }

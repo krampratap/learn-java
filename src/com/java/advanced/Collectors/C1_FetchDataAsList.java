@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 public class C1_FetchDataAsList {
     public static void main(String[] args) {
         List<Product> productsList = new ArrayList<Product>();
@@ -13,10 +14,12 @@ public class C1_FetchDataAsList {
         productsList.add(new Product(3,"Lenovo Laptop",28000f));
         productsList.add(new Product(4,"Sony Laptop",28000f));
         productsList.add(new Product(5,"Apple Laptop",90000f));
-        List<Float> productPriceList =
+        List<Double> productPriceList =
                 productsList.
                         stream().map(x->x.price)         // fetching price
                         .collect(Collectors.toList());  // collecting as list
+
+        System.out.println( productsList.stream().mapToDouble(x -> x.price).sum());
         System.out.println(productPriceList);
     }
 }

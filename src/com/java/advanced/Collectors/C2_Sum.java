@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class C2_Sum {
     public static void main(String[] args) {
-        List<Product> productsList = new ArrayList<Product>();
+        List<Product> productsList = new ArrayList<>();
         //Adding Products
         productsList.add(new Product(1,"HP Laptop",25000f));
         productsList.add(new Product(2,"Dell Laptop",30000f));
@@ -15,9 +15,11 @@ public class C2_Sum {
         productsList.add(new Product(5,"Apple Laptop",90000f));
 
         double sumDouble = productsList.stream().collect(Collectors.summingDouble(x->x.price));
+                            //productsList.stream().mapToDouble(x -> x.price).sum(); Same as above
         System.out.println("Prices sum "+sumDouble);
 
         int sumInt = productsList.stream().collect(Collectors.summingInt(x->(int)x.price));
+                    //productsList.stream().mapToInt(x -> (int) x.price).sum(); Same as above
         System.out.println("Prices sum "+sumInt);
 
         Double average = productsList.stream()
@@ -26,6 +28,7 @@ public class C2_Sum {
 
         Long noOfElements = productsList.stream()
                 .collect(Collectors.counting());
+                            //productsList.stream().count(); --Same as above
         System.out.println("Total elements : "+noOfElements);
     }
 

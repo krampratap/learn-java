@@ -18,8 +18,5 @@ public class lambda4_Thread {
         };
         Thread t2=new Thread(r2);
         t2.start();
-
-
-
     }
 }

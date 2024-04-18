@@ -19,5 +19,6 @@ public class FI1_InterfaceWithObjectMethods implements sayable{
     public static void main(String[] args) {
         FI1_InterfaceWithObjectMethods FI = new FI1_InterfaceWithObjectMethods();
         FI.say("Functional Interfaces are cool");
+        System.out.println(FI.toString());
     }
 }

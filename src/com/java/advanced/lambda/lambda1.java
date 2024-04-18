@@ -22,7 +22,7 @@ public class lambda1 {
         dr.drawing();
 
         Drew drew = ()->  {
-                System.out.printf("Drew");
+                System.out.println("Drew");
             };
         drew.drew();
     }

@@ -1,5 +1,5 @@
 package com.java.advanced.Method_reference;
-//we have defined a functional interface and referring a static method to it's functional method say().
+//we have defined a functional interface and referring a static method saySomething() to it's functional method say().
 interface Sayable{
     void say();
 }

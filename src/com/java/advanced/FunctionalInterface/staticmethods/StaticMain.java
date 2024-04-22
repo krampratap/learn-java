@@ -15,8 +15,8 @@ interface A3{
 public class StaticMain implements A3{
     public static void main(String[] args) {
         StaticMain obj = new StaticMain();
-        obj.sayHello(); //Error
-        StaticMain.sayHello(); //Error
+      //obj.sayHello(); //Error
+      //StaticMain.sayHello(); //Error
         A3.sayHello(); //Only one way to call STATIC methods inside interface
         obj.sayBye(); //Default methods we can call
     }

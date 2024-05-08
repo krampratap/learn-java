@@ -1,4 +1,4 @@
-package com.java.advanced.exercises.hashmap;
+package com.java.advanced.exercises.hashset;
 
 import java.util.*;
 

@@ -2,7 +2,7 @@ package com.java.advanced.exercises.hashset;
 
 import java.util.*;
 
-public class Add {
+public class HashSetMain {
     public static void main(String[] args) {
         HashSet<String> hash= new HashSet<>();
         hash.add("One");

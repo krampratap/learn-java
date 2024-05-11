@@ -2,7 +2,7 @@ package com.java.advanced.exercises.hashmap;
 
 import java.util.HashMap;
 
-public class add {
+public class HashMapMain {
     public static void main(String[] args) {
         HashMap<String,Integer> kv = new HashMap<>();
 
@@ -25,7 +25,7 @@ public class add {
         System.out.println(kv.containsValue(4));
 
         //Create a set view of the mappings
-        System.out.println(kv.entrySet());
+        System.out.println("Entry Set: "+kv.entrySet());
 
         //Get specified key of the map
         System.out.println( kv.get("Phones"));
@@ -35,5 +35,7 @@ public class add {
 
         //Get values
         System.out.println(kv.values());
+
+
     }
 }

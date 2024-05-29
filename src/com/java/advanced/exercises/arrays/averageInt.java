@@ -18,6 +18,5 @@ public class averageInt {
                 .mapToDouble(Integer::doubleValue)
                 .average()
                 .orElse(0.0));
-
     }
 }

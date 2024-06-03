@@ -21,9 +21,16 @@ public class lambda1 {
         };
         dr.drawing();
 
+        /*
+        The Lambda expression is used to provide the implementation of an interface which has functional interface.
+        It saves a lot of code. In case of lambda expression, we don't need to define the method again for providing the implementation.
+        Here, we just write the implementation code.
+        */
+
         Drew drew = ()->  {
                 System.out.println("Drew");
             };
         drew.drew();
+
     }
 }

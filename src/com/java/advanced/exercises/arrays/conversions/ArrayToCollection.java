@@ -15,5 +15,9 @@ public class ArrayToCollection {
         System.out.println(arr);
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.asList(arr));
+
+        int[] arrr = {10,1,2,3,4};
+        Arrays.sort(arr);
+
     }
 }

@@ -20,6 +20,23 @@ TO overcome implement(override) the method sayHello
 
 /*public class MultipleInheritance implements A1,A2{
     public static void main(String[] args) {
-
+        MultipleInheritance m = new MultipleInheritance();
+        m.sayHello(); //Which sayHello to run as there is multiple inheritance
     }
 }*/
+//In the above case we can override in class where we inherit
+
+
+class MyClasss implements A1,A2{
+    public static void main(String[] args) {
+        MyClasss m = new MyClasss();
+        m.sayHello();
+    }
+    @Override
+    public void sayHello(){ //public is imp
+        A1.super.sayHello();
+        A2.super.sayHello();
+        System.out.println("My Implementation");
+    }
+}
+

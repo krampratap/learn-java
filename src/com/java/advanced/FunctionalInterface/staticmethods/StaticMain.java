@@ -2,7 +2,7 @@ package com.java.advanced.FunctionalInterface.staticmethods;
 
 interface A3{
     /*
-        static void sayHello();  Will give error because static method should have definition
+        static void sayHello();  Will give error because static method should have definition or make it abstract
      */
     static void sayHello(){
         System.out.println("Hello");

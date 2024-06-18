@@ -1,4 +1,4 @@
-package com.java.advanced.exercises.arrays;
+package com.java.advanced.streams.arrays;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class orderStrings {
             System.out.println(list.stream().sorted().toList());
             Collections.sort(list);
         System.out.println(list);
-
+        StringBuilder s = new StringBuilder();
         System.out.println("Descending order");
             System.out.println(list.stream().sorted(Comparator.reverseOrder()).toList());
 

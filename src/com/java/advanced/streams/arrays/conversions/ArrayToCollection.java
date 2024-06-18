@@ -1,6 +1,7 @@
-package com.java.advanced.exercises.arrays.conversions;
+package com.java.advanced.streams.arrays.conversions;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class ArrayToCollection {
@@ -18,6 +19,12 @@ public class ArrayToCollection {
 
         int[] arrr = {10,1,2,3,4};
         Arrays.sort(arr);
+        // Using streams to convert int[] to List<Integer>
+        List<Integer> list = Arrays.stream(arrr)
+                                    .boxed()// IntStream // convert IntStream to Stream<Integer>
+                                    .toList(); // collect the elements into a List
 
+        Integer max = list.stream().max(Comparator.comparingInt(a -> a)).get();
+        System.out.println(max);
     }
 }

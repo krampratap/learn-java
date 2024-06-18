@@ -1,4 +1,4 @@
-package com.java.advanced.exercises.arrays.conversions;
+package com.java.advanced.streams.arrays.conversions;
 
 import java.util.ArrayList;
 import java.util.List;

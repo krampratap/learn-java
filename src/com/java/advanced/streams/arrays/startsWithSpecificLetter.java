@@ -1,9 +1,9 @@
-package com.java.advanced.exercises.arrays;
+package com.java.advanced.streams.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class convertToUppercase {
+public class startsWithSpecificLetter {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         list.add("One");
@@ -12,9 +12,7 @@ public class convertToUppercase {
         list.add("Four");
         list.add("Five");
 
-        list.stream().map(String::toUpperCase).forEach(System.out::println);
-        System.out.println("--------");
-        list.stream().map(String::toLowerCase).forEach(System.out::println);
+        list.stream().filter(x->x.startsWith("T")).forEach(System.out::println);
 
     }
 }

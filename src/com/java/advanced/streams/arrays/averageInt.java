@@ -1,4 +1,4 @@
-package com.java.advanced.exercises.arrays;
+package com.java.advanced.streams.arrays;
 
 import java.util.ArrayList;
 import java.util.List;

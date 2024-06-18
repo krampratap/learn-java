@@ -1,6 +1,5 @@
-package com.java.advanced.lambda;
+package com.java.advanced.predicate;
 
-import java.util.Objects;
 import java.util.function.Predicate;
 
 public class PredicateMain {

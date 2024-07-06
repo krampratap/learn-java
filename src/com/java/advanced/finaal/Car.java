@@ -3,8 +3,8 @@ package com.java.advanced.finaal;
 /*
     Final keyword can be on
         1. variables
-        2. methods - When class is inherited, the    final method cannot be overriden
-        3. classes - the class cannot be inherited
+        2. methods - When class is inherited, the final method cannot be overriden - EvCar class
+        3. classes - the class cannot be inherited - airBags method
 
     Can constructors be made final
         Ans: Final keyword is used to stop methods from overriding..

@@ -44,6 +44,11 @@ public class lambda5_Comparator {
         mm.put(3, "f");
         mm.put(1, "y");
         System.out.println("After manual sorting " + m);
+        System.out.println(m.size());
+        System.out.println();
+        String s = "adb";
+        StringBuilder sb= new StringBuilder(s);
+        sb.reverse();
     }
     /* We have created a implementation class which can be avoided with lambda expression*/
     static class MyClass implements Comparator<Integer>{

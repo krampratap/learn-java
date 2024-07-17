@@ -1,4 +1,4 @@
-package com.java.advanced.multi_threading;
+package com.java.advanced.multi_threading.a_basics;
 
 public class Thread1 extends Thread{
 

@@ -1,5 +1,7 @@
 package com.java.advanced.b_static;
 
+import java.util.function.Function;
+
 /*
 It is primarily used for memory management
 It can be used on
@@ -21,6 +23,10 @@ related data meaning non-static data in a static class i.e
         c. Create a static method which returns the School object so that entire application can use this.
     6. Static CANNOT be applied on parent class. It can be applied on nested class. To create an object of nested
        class you don't need an object of outer class.
+       a. Making a top-level class static would contradict this principle because static implies a single, shared entity,
+          which doesn't fit with the concept of creating multiple instances of a class.
+       b. The static keyword in Java is used to indicate that a member belongs to the class itself rather than to instances of the class
+          A top-level class does not belong to another class
  */
 public class StaticMain {
     public static void main(String[] args) { //Main method is also static as JVM will call it directly instead of creating an instance
@@ -41,5 +47,6 @@ public class StaticMain {
         School.nestedStaticClassExample obj = new School.nestedStaticClassExample();
         obj.printHello();
         School.nestedStaticClassExample.aStaticPrintHello();
+
     }
 }

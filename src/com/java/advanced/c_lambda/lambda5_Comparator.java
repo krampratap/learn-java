@@ -16,7 +16,7 @@ public class lambda5_Comparator {
         //In Desc
         list.sort(new MyClass());
         //In Desc Using Lambda
-        list.sort((b, c) -> c - b); //If we .sort.. in java it will use mergeSort
+        list.sort((b, c) -> c - b); //If we sort.. in java it will use mergeSort
         System.out.println(list);
 
         //Sets
@@ -43,7 +43,7 @@ public class lambda5_Comparator {
         mm.put(2, "z");
         mm.put(3, "f");
         mm.put(1, "y");
-        System.out.println("After manual sorting " + m);
+        System.out.println("After manual sorting " + mm);
         System.out.println(m.size());
         System.out.println();
         String s = "adb";

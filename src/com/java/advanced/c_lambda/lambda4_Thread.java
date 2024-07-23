@@ -10,7 +10,7 @@ public class lambda4_Thread {
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
-                System.out.println("Thread is running");
+                System.out.println("Thread1 is running");
             }
         };
         Thread t1 = new Thread(r1);

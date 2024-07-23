@@ -19,6 +19,8 @@ related data meaning non-static data in a static class i.e
         a. Create private constructor
         b. Create a static variable with School object.
         c. Create a static method which returns the School object so that entire application can use this.
+    6. Static CANNOT be applied on parent class. It can be applied on nested class. To create an object of nested
+       class you don't need an object of outer class.
  */
 public class StaticMain {
     public static void main(String[] args) { //Main method is also static as JVM will call it directly instead of creating an instance
@@ -34,7 +36,10 @@ public class StaticMain {
         Student s5 = new Student();
         System.out.println(Student.count);
         System.out.println("No of Students "+Student.getNoOfStudents()); // Static method
+
+        System.out.println("Static on Nested class");
+        School.nestedStaticClassExample obj = new School.nestedStaticClassExample();
+        obj.printHello();
+        School.nestedStaticClassExample.aStaticPrintHello();
     }
-
-
 }

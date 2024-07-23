@@ -1,4 +1,4 @@
-package com.java.advanced.FunctionalInterface.defaultmethods;
+package com.java.advanced.d_FunctionalInterface.defaultmethods;
 
 interface A1 {
     default void sayHello(){

@@ -1,4 +1,4 @@
-package com.java.advanced.lambda;
+package com.java.advanced.c_lambda;
 
 import java.util.ArrayList;
 import java.util.List;

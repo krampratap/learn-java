@@ -16,7 +16,7 @@ public class Streams0_Introduction {
         Stream<String> strListStream = Arrays.stream(strArray);
 
         int[] intArray = {1,2,3};
-        //Stream<Integer> integerStream = Arrays.stream(intArray); //Error as stream returns int Array
+        //Stream<Integer> integerStream = Arrays.stream(intArray); //Error as stream returns IntStream
         IntStream integerStream = Arrays.stream(intArray); //IntStream is a primitive int specialization of Stream
 
         Stream<Integer> intStream = Stream.of(1,2,3);

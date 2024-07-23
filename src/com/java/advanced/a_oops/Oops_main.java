@@ -1,7 +1,6 @@
 package com.java.advanced.a_oops;
 
 import com.java.advanced.a_oops.inheritance.Cat;
-import com.java.advanced.a_oops.z_abstraction.Animal;
 
 /*OOPS, is a way of programming - we play with classes and objects
 Other style of programming

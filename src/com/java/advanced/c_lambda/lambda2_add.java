@@ -1,4 +1,4 @@
-package com.java.advanced.lambda;
+package com.java.advanced.c_lambda;
 
 interface IAdd {
     int add(int a, int b);

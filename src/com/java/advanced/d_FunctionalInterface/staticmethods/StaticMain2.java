@@ -1,4 +1,4 @@
-package com.java.advanced.FunctionalInterface.staticmethods;
+package com.java.advanced.d_FunctionalInterface.staticmethods;
 
 interface A4{
     static void sayHi(){

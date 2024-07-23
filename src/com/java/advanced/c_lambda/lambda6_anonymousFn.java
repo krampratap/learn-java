@@ -1,4 +1,4 @@
-package com.java.advanced.lambda;
+package com.java.advanced.c_lambda;
 
 public class lambda6_anonymousFn {
     public static void main(String[] args) {

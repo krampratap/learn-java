@@ -1,4 +1,4 @@
-package com.java.advanced.FunctionalInterface.staticmethods;
+package com.java.advanced.d_FunctionalInterface.staticmethods;
 /*
 Ususally we define main in a class
 What if we define main in an interface

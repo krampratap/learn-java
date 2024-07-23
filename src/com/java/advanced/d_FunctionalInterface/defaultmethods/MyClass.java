@@ -1,4 +1,4 @@
-package com.java.advanced.FunctionalInterface.defaultmethods;
+package com.java.advanced.d_FunctionalInterface.defaultmethods;
 
 interface A {
     /*void sayHello()  - Gives error because we have definition - So convert to default

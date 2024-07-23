@@ -15,11 +15,8 @@ public class forEachClass {
 
         System.out.println("------------Iterating by passing method reference---------------");
         games.forEach(System.out::println);
-
         //Along with forEach() method, Java provides one more method forEachOrdered().
         // It is used to iterate elements in the order specified by the stream.
-
         games.stream().forEachOrdered(System.out::print);
-
     }
 }

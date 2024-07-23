@@ -1,4 +1,4 @@
-package com.java.advanced.FunctionalInterface;
+package com.java.advanced.d_FunctionalInterface;
 
 interface sayable
 {

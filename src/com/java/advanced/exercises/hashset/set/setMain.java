@@ -1,6 +1,5 @@
 package com.java.advanced.exercises.hashset.set;
 
-import javax.xml.transform.Source;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;

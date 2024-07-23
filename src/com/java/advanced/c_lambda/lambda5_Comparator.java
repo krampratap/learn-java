@@ -1,4 +1,4 @@
-package com.java.advanced.lambda;
+package com.java.advanced.c_lambda;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class lambda5_Comparator {
         //In Desc
         list.sort(new MyClass());
         //In Desc Using Lambda
-        list.sort((b, c) -> c - b);
+        list.sort((b, c) -> c - b); //If we .sort.. in java it will use mergeSort
         System.out.println(list);
 
         //Sets

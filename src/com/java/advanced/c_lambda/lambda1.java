@@ -1,4 +1,4 @@
-package com.java.advanced.lambda;
+package com.java.advanced.c_lambda;
 
 interface Draw
 {
@@ -27,10 +27,9 @@ public class lambda1 {
         Here, we just write the implementation code.
         */
 
-        Drew drew = ()->  {
+        Draw drew = ()->  {
                 System.out.println("Drew");
             };
-        drew.drew();
-
+        drew.drawing();
     }
 }

@@ -1,4 +1,4 @@
-package com.java.advanced.a_oops.z_abstraction;
+package com.java.advanced.a_oops.abstraction;
 /*
 Animal is a generalised class. So when asked what sound does animal make (makeSound).. we cannot say..
 we can only say based on which animal it is. So we cannot define makeSound method in Animal class, So MAKE IT ABSTRACT.
@@ -16,5 +16,4 @@ public abstract class Animal {
     public void sleep(){
         System.out.println("Zzzz..");
     }
-
 }

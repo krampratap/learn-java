@@ -2,6 +2,7 @@ package com.java.advanced.b_streams;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Streams2_WithStream {
@@ -18,5 +19,11 @@ public class Streams2_WithStream {
                 .map(p->p.price)        // fetching price
                 .collect(Collectors.toList()); // collecting as list
         System.out.println(productPriceList2);
+        Predicate<Float> greaterThanFiftyK = x->x>50000;
+        List<Float> productsWithPriceGreaterThan50k = productsList.stream()
+                                                        .map(x->x.price)
+                                                        .filter(greaterThanFiftyK).toList();
+        System.out.println(productsWithPriceGreaterThan50k);
+        System.out.println(greaterThanFiftyK.test(600000F));
     }
 }

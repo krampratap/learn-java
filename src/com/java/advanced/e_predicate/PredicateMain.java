@@ -7,23 +7,23 @@ public class PredicateMain {
         /* Predicate has a test method. It can be defined easily using a lambda function
            It can be used to test anything like if salary is greater, or persons name start with S.
          */
-        Predicate<Integer> salaryGreaterThanOneLakh = x -> x > 10000; //It holds a condition
-        System.out.println(salaryGreaterThanOneLakh.test(10));
+        Predicate<Integer> salaryGreaterThanOneLac = x -> x > 10000; //It holds a condition
+        System.out.println(salaryGreaterThanOneLac.test(10));
 
         //Predicates are powerful and can be used in Streams()
         Predicate<String> startsWithR = x -> x.startsWith("R");
         System.out.println(startsWithR.test("Ravi"));
-        Predicate<String> endsWithm = x -> x.endsWith("m");
+        Predicate<String> endsWithM = x -> x.endsWith("m");
 
-        Predicate<String> and = startsWithR.and(endsWithm);
         System.out.println("-----default and method------");
-        System.out.println(and.test("Ram"));
-        System.out.println(and.test("Tam"));
+        Predicate<String> startsAndEnds = startsWithR.and(endsWithM);
+        System.out.println(startsAndEnds.test("Ram"));
+        System.out.println(startsAndEnds.test("Tam"));
 
         System.out.println("-----default or method------");
-        Predicate<String> or = startsWithR.or(endsWithm);
-        System.out.println(or.test("Tam"));
-        System.out.println(or.test("Ram"));
+        Predicate<String> startsOrEnds = startsWithR.or(endsWithM);
+        System.out.println(startsOrEnds.test("Tam"));
+        System.out.println(startsOrEnds.test("Ram"));
 
         System.out.println("-----negate default method------");
         System.out.println(startsWithR.negate().test("Ram"));

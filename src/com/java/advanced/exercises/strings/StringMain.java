@@ -6,6 +6,5 @@ public class StringMain {
         System.out.println("If you want to get one char and assign to String");
         String getOneLetterFromStr = String.valueOf(str.charAt(1));
         System.out.println(getOneLetterFromStr);
-
     }
 }

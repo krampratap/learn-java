@@ -9,7 +9,7 @@ public class SupplierMain {
     public static void main(String[] args) {
         /* Supplier is a functional interface*/
         Supplier<Integer> supplier = () -> 100; //always returns 100;
-        Consumer<Integer> consumer = (x) ->System.out.println(x);
+        Consumer<Integer> consumer = x ->System.out.println(x);
 
         Predicate<Integer> predicate = x -> x%2==0 ;
         Function<Integer,Integer> function = x-> x*x;
@@ -18,7 +18,6 @@ public class SupplierMain {
         {
             consumer.accept(function.apply(supplier.get()));
         }
-
     }
 
 }

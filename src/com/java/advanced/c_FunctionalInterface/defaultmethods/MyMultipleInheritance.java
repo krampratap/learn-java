@@ -1,9 +1,7 @@
 package com.java.advanced.c_FunctionalInterface.defaultmethods;
 
 interface A1 {
-    default void sayHello(){
-        System.out.println("Hello A");
-    }
+     default void sayHello() { System.out.println("Hello A"); }
 }
 
 interface A2 {

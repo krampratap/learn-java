@@ -1,7 +1,7 @@
 package com.java.advanced.c_lambda;
 
 public class lambda4_Thread {
-    public static void main(String[] args) {
+    private static void main(String[] args) {
         /*
             runnable is used to run a thread.
             runnable is a functional interface with one method run. so, lambda expression is the implementation of run method.
@@ -24,7 +24,18 @@ public class lambda4_Thread {
                 System.out.println(i);
             }
         };
+
         Thread t2=new Thread(r2);
         t2.start();
+
+        Thread t3 = new Thread(()->{
+            System.out.println("Thread2 is running...");
+            for(int i=0;i<5;i++)
+            {
+                System.out.println(i);
+            }
+        });
+
+        t3.start();
     }
 }

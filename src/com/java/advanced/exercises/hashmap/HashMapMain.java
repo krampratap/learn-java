@@ -8,7 +8,7 @@ public class HashMapMain {
 
         kv.put("Phones",2);
         kv.put("Laptops",3);
-        kv.put("Cars",2);
+        kv.put("Cars",12);
 
         System.out.println(kv);
 

@@ -29,6 +29,9 @@ class MyClasss implements A1,A2{
     public static void main(String[] args) {
         MyClasss m = new MyClasss();
         m.sayHello();
+
+        String s = "";
+        System.out.println(s.length());
     }
     @Override
     public void sayHello(){ //public is imp

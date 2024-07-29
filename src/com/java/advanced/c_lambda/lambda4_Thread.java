@@ -37,5 +37,17 @@ public class lambda4_Thread {
         });
 
         t3.start();
+
+        Runnable r = new Runnable() {
+            @Override
+                 public   void run(){
+                System.out.println("T");
+            }
+        };
+
+        Thread t123 = new Thread(r);
+        t123.start();
+        Thread t34 = new Thread(() -> System.out.println("t"));
+        t34.start();
     }
 }
